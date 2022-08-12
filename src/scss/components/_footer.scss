@@ -1,0 +1,99 @@
+footer {
+  padding: 4rem 0;
+  background-image: url('../../assets/img/bg-footer.png');
+  background-size: cover;
+  position: relative;
+  font-size: 0.8rem;
+  @include tablet {
+    padding: 6rem 0 1rem 0;
+    font-size: 18px;
+  }
+  @media (max-width: 480px){
+    overflow: hidden;
+  }
+  .vz-footer {
+    &--container {
+      margin: 0 auto;
+    }
+    &--contents{
+      @media (max-width:480px){
+        padding: 0 2rem;
+      }
+    }
+    &--logo {
+      @extend .center-items;
+      @extend .justify-content-end;
+      @extend .flex-column;
+      padding-right: 4rem;
+      @include tablet {
+        padding: 0 0 5rem 0;
+      }
+      @include mobile {
+        padding: 0 1rem;
+        width: 60%;
+      }
+      &_vizionLogo {
+        max-width: 100%;
+      }
+      &_coppy-right {
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+    &--contact {
+      padding-left: 3rem;
+      &__content {
+        height: 115px;
+        > div {
+          padding: 0.5rem 0;
+        }
+        > a {
+          padding: 0.5rem 0;
+          text-decoration: none;
+        }
+        @media (max-width:480px){
+          height: auto;
+          margin-bottom: 3rem;
+        }
+      }
+      @include tablet {
+        padding: 0;
+      }
+    }
+    &--term {
+      justify-content: flex-end;
+      align-items: flex-end;
+      @media (max-width:480px){
+        justify-content: flex-start;
+      }
+      &__content {
+        height: 115px;
+      }
+    }
+    &--coppy-right {
+      display: none;
+      color: white;
+      margin-top: 9rem;
+      @include tablet {
+        display: block;
+        text-align: center;
+      }
+      @media (max-width:480px){
+        margin-top: 4rem;
+      }
+    }
+    &--nav-link {
+      padding: 0.5rem 1rem;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 10px;
+        @extend .bg-vz-red;
+        bottom: 1rem;
+        left: 0;
+      }
+    }
+  }
+}

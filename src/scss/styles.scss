@@ -1,0 +1,25 @@
+@import './custom';
+@import './variables';
+@import './responsive';
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Components
+@import './components/common';
+@import './components/header';
+@import './components/logo';
+@import './components/homepage';
+@import './components/title';
+@import './components/card';
+@import './components/hero';
+@import './components/partner';
+@import './components/contact';
+@import './components/real-estate';
+@import './components/footer';
+@import './components/head-banner';
+@import './components/sidebar';
+@import './components/ulStyle';
+@import './components/contactModal';
+@import './components/gallery';
+
+//Button
+@import './components/button';

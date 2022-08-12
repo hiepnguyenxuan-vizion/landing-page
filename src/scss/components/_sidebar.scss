@@ -1,0 +1,25 @@
+.vz-sidebar {
+  width: 80%;
+
+  margin-left: -80%;
+  transition: all 0.5s;
+  &--open {
+    margin-left: 0;
+    transition: 0.5s;
+  }
+
+  &--header {
+    @extend .center-items;
+    padding: 1rem;
+    position: relative;
+
+    &-logo {
+      width: 50%;
+    }
+    &-close {
+      position: absolute;
+      top: 0;
+      right: -42px;
+    }
+  }
+}

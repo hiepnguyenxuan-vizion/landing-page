@@ -1,0 +1,112 @@
+.vz-re {
+  &--title {
+    text-transform: uppercase;
+    @include mobile {
+      display: none;
+      padding: 0 3rem;
+    }
+
+    &::before,
+    &__mobile::before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      height: 4px;
+      width: 4%;
+      transform: translate(-50%, -50%);
+      @extend .bg-vz-red;
+    }
+
+    &__mobile {
+      display: none;
+      text-transform: uppercase;
+      @include mobile {
+        display: block;
+        margin-bottom: 12rem;
+      }
+      &::before {
+        @extend .bg-vz-white;
+      }
+    }
+  }
+  &--desc {
+    font-size: 3.375rem;
+    font-weight: bold;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  &--content {
+    &-head {
+      margin: 7rem 0 5rem 0;
+      @include mobile {
+        margin: 4rem 0;
+      }
+    }
+    &-desc {
+      font-size: 1.2rem;
+    }
+    &-card {
+      padding: 1.5rem;
+      @include mobile {
+        margin-bottom: 2rem;
+      }
+      &-no {
+        @extend .text-vz-red;
+        font-size: 10rem;
+        font-weight: bold;
+        line-height: 1;
+        @include mobile {
+          font-size: 6rem;
+        }
+      }
+      &-text {
+        font-size: 2.4rem;
+        font-weight: bold;
+        @include mobile {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  &--hero-card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 4rem;
+    background: url('../../assets/img/case-study-card.png') center center
+      no-repeat;
+    background-size: cover;
+    background-color: white;
+    @include mobile {
+      padding: 1.5rem;
+      width: 96%;
+    }
+  }
+
+  &--cta {
+    &-title {
+      font-size: 3.375rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      @include mobile {
+        font-size: 2.5rem;
+      }
+    }
+    &-action {
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+    &-divider {
+      @extend .mx-3;
+      @include mobile {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.vz-title {
+  h2 {
+    font-size: 2.5rem;
+    @extend .font-weight-bold;
+    @include tablet {
+      font-size: 4rem;
+    }
+    @media (max-width: 480px){
+      font-size: 2.5rem;
+    }
+  }
+  &--desktop {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

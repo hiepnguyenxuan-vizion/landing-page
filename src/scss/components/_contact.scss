@@ -1,0 +1,44 @@
+.vz-contact {
+  &--title {
+    font-size: 4.375rem;
+    font-weight: bold;
+    @include mobile {
+      font-size: 2.5rem;
+    }
+  }
+  &--subtitle {
+    font-size: 1.75rem;
+  }
+
+  &--content {
+    padding-bottom: 5rem;
+  }
+
+  &--form {
+    &-header {
+      @extend .bg-white;
+      height: 3rem;
+      border-radius: 0 50px 0 0;
+    }
+    &-body {
+      @extend .bg-white;
+      border-radius: 0 0 0 50px;
+      box-shadow: 3px 3px 8px rgba($color: #000000, $alpha: 0.5);
+      padding: 0 3rem 3rem;
+      @include mobile {
+        padding: 0 2rem 2rem;
+      }
+    }
+  }
+  &--input,
+  &--textarea {
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 1rem;
+  }
+  &--textarea {
+    height: 155px;
+  }
+}

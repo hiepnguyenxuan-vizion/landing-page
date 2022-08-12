@@ -1,0 +1,18 @@
+.ul-red-check {
+  font-size: 1rem;
+  padding-inline-start: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 0.8rem;
+    padding-left: 5px;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      margin-right: 10px;
+      background-image: url('../../assets/icon/check.png');
+    }
+  }
+}

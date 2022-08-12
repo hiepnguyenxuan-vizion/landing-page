@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50">
+  <g id="icon-fb" transform="translate(-234 -274)">
+    <path id="social_facebook_icon_158201" d="M10.059,11.481H7.022v4.957h3.037V31H15.9V16.376h4.074l.434-4.9H15.9V8.692c0-1.154.232-1.611,1.348-1.611h3.16V2H16.363c-4.345,0-6.3,1.913-6.3,5.577v3.9Z" transform="translate(244.978 283)" fill="#fff"/>
+    <g id="Rectangle_14336" data-name="Rectangle 14336" transform="translate(234 274)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="50" height="50" rx="15" stroke="none"/>
+      <rect x="1" y="1" width="48" height="48" rx="14" fill="none"/>
+    </g>
+  </g>
+</svg>

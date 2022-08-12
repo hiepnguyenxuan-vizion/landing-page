@@ -1,0 +1,138 @@
+.vz-header {
+  position: fixed;
+  z-index: 999;
+  margin-top: 20px;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .dropdown-menu {
+    padding: 0;
+    .dropdown-item {
+      @extend .text-black;
+
+      a {
+        @extend .text-black;
+        text-shadow: none;
+      }
+
+      &:hover {
+        @extend .bg-vz-red;
+        a {
+          @extend .text-white;
+        }
+      }
+    }
+  }
+
+  &__home {
+    .dropdown-toggle::after {
+      @extend .text-vz-red;
+    }
+    .nav-item {
+      position: relative;
+
+      &__before {
+        .active::before {
+          content: '';
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 2px;
+          width: 50%;
+          transform: translate(50%, 0);
+          @extend .bg-vz-red;
+        }
+      }
+
+      a {
+        color: white;
+        text-shadow: 0px 0px 4px black;
+      }
+    }
+  }
+
+  &__icon-lang{
+    width: 38px;
+    margin-left: 15px;
+    position: relative;
+    @media (max-width: 480px) {
+      width: 25px;
+      margin-left: 0;
+    }
+    .languages {
+      position: absolute;
+      top: 45px;
+      background-color: white;
+      padding: 0px 5px;
+      list-style-type: none;
+      .language {
+        display: flex;
+        align-items: center;
+        margin: 4px 0;
+        @media (max-width: 480px){
+          font-size: 10px;
+        }
+        div {
+          display: flex;
+          width: 18px;
+          height: 18px;
+          margin-right: 4px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  &__other {
+    .dropdown-toggle::after {
+      @extend .text-vz-white;
+    }
+    .nav-item {
+      position: relative;
+
+      &__before {
+        .active::before {
+          content: '';
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 2px;
+          width: 50%;
+          transform: translate(50%, 0);
+          @extend .bg-vz-white;
+        }
+      }
+
+      a {
+        color: white;
+        text-shadow: 0px 0px 4px black;
+      }
+    }
+  }
+
+  &__abs {
+    position: absolute;
+  }
+}
+
+.btn--book-a-demo {
+  border-radius: 20px;
+}
+
+.vz-nav--brand {
+  width: 20%;
+  margin-left: 16%;
+
+  @include tablet {
+    width: 70%;
+    margin-left: 0;
+  }
+}

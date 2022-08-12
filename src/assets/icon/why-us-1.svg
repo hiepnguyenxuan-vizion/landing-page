@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="48" viewBox="0 0 50 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14341" data-name="Rectangle 14341" width="50" height="48" transform="translate(0.5 -0.5)" fill="none" stroke="#f73e3e" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="icon-_why_us_1" data-name="icon- why us 1" transform="translate(-0.5 0.5)">
+    <g id="Group_4845" data-name="Group 4845" clip-path="url(#clip-path)">
+      <g id="Group_4848" data-name="Group 4848" transform="translate(1 3)">
+        <rect id="Rectangle_14339" data-name="Rectangle 14339" width="46" height="32" transform="translate(1 7)" fill="none" stroke="#f73e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_613" data-name="Path 613" d="M19,6A5,5,0,0,1,29,6" fill="none" stroke="#f73e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_14340" data-name="Rectangle 14340" width="6" height="6" transform="translate(21 19)" fill="none" stroke="#f73e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_614" data-name="Path 614" d="M21,21.893A40.79,40.79,0,0,1,1.7,15.418" fill="none" stroke="#f73e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_615" data-name="Path 615" d="M46.854,15.7a40.771,40.771,0,0,1-18.829,6.19" fill="none" stroke="#f73e3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

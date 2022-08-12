@@ -1,0 +1,58 @@
+.vz-partner {
+  background-image: url('../../assets/img/pattern-circle-dot.png'),
+    url('../../assets/img/pattern-circle-dot.png');
+  background-position: top -20% right -30%, bottom -30% left -30%;
+  background-repeat: no-repeat;
+
+  &--content {
+    @include mobile {
+      margin-top: 3rem;
+    }
+  }
+
+  // HERO
+  &--hero {
+    &-title {
+      @include mobile {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      font-weight: bold;
+      font-size: 4rem;
+    }
+    &-desc {
+      background: url('../../assets/img/case-study-card.png') center center
+        no-repeat;
+      background-size: cover;
+      background-color: white;
+      > .btn {
+        @extend .mx-auto;
+      }
+    }
+    &-content {
+      @extend .text-black;
+      font-weight: 500;
+      font-size: 1.75rem;
+
+      @include mobile {
+        text-align: center;
+        font-size: 1.25rem;
+      }
+    }
+
+    @include mobile {
+      position: absolute;
+      bottom: -120px;
+      left: 0;
+      margin: 0 1rem;
+    }
+  }
+
+  &--card-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &--headline {
+    border-bottom: 1px solid gray;
+  }
+}
